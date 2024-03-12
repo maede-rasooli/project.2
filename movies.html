@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Galaxy</title>
+    <link rel="icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+    body.back.color{
+        background-color: #E6DBAC;
+    }
+    div.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #C19A6B;
+        text-align: center;
+        padding: 2px 0;
+        font-size: x-large;
+        z-index: 1000;
+} 
+    .align{
+        padding-top: 100px;
+        text-align: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       }
+    figcaption.font-caption{
+       font-size: large;
+       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: black;
+       font-weight: bold;
+       padding-top: 10px;
+       }
+ 
+       
+    .image-container {
+       position: relative;
+       display: inline-block;
+       padding-left: 40px;
+}
+
+.image-container img {
+    transition: transform 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position:absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 2em;
+    color: #C19A6B;
+}
+
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay img {
+    width: 100px; 
+    height: 100px;
+}
+
+       
+ div.pagin{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    }
+
+ a.page{
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    background-color: #884A39;
+    font-weight: bold;
+    border-radius: 5px;
+    }
+
+li.li{
+    margin: 0 5px;
+    padding-bottom: 30px;
+    }
+
+a.page:hover{
+    color: #ddcea7;
+    }
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #C19A6B;
+    text-align: center;
+    padding: 2px 0;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 1000;  }
+</style>
+</head>
+
+<body class="back.color">
+    <div class="fixed">
+        <body class="color">
+                <p class="Home">
+                <a href="index.html"> <span><i class="fa-solid fa-house"></i></span> Home</a>
+                <a href="movies.html"> <span>📽</span> Movies</a>
+                </p>
+     </div>
+     <h1 class="align">Movies</h1>
+     <a href="movie-details.html"><figure class="image-container">
+         <img src="MV5BNjU0Mjc0NzU3NF5BMl5BanBnXkFtZTcwMTU4OTkwNA@@._V1_.jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">Jane Eyre <br><span>Imbd: 7/6</span></figcaption>
+     </figure></a> 
+      
+     <a href="movie-details.html"><figure class="image-container">
+         <img src="download (1).jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">The Godfather <br><span>Imbd: 7/6</span></figcaption>
+     </figure></a>
+ 
+     <a href="movie-details.html"><figure class="image-container">
+         <img src="ab67616d0000b27324ac8d236b3aa7c3b185fcf4.jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">Anne With An E <br><span>Imbd: 7/6</span></figcaption>
+     </figure></a>
+ 
+     <a href="movie-details.html"><figure class="image-container">
+         <img src="image.jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">The Great Gatsby <br><span>Imbd: 7/6</span></figcaption>
+     </figure></a>
+ 
+     <a href="movie-details.html"><figure class="image-container">
+         <img src="download.jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">Forrest Gump <br><span>Imbd: 7/6</span></figcaption>
+     </figure></a>
+ 
+     <a href="movie-details.html"> <figure class="image-container">
+         <img src="image (1).jpg" alt="Description of the image" height="300" width="300">
+         <div class="overlay">
+             <h1><i class="fas fa-play-circle"></i></h1>
+         </div>
+         <figcaption class="font-caption">Becoming Jane <br><span>Imbd: 7/6</span></figcaption>
+     </figure> </a>
+       
+       
+     </div>
+
+    <ul>
+        <div class="pagin">
+            <li class="li"><a class="page" href="#"><</a></li>
+            <li class="li"><a class="page" href="#">1</a></li>
+            <li class="li"><a class="page" href="#">2</a></li>
+            <li class="li"><a class="page" href="#">3</a></li>
+            <li class="li"><a class="page" href="#">4</a></li>
+            <li class="li"><a class="page" href="#">></a></li>
+          </div>
+      </ul>
+      <div class="footer">
+        <footer>
+        2024 Classic Galaxy
+      </footer>
+      </div>
+
+</body>
+</html>
